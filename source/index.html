@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Стартовый шаблон</title>
+  <!--В задании не указано как подключать шрифты, подключил на свое усмотрение-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <h1 class="page-title">Тест</h1>
+  <ul class="nav-list">
+    <li class="nav-list__item">
+      <a href="" class="nav-list__link">
+        Элемент меню
+      </a>
+    </li>
+    <li class="nav-list__item">
+      <a href="" class="nav-list__link">
+        Элемент меню с наведением
+      </a>
+    </li>
+    <li class="nav-list__item">
+      <a href="" class="nav-list__link">
+        Еще один элемент у которого очень длинный текст
+      </a>
+    </li>
+    <li class="nav-list__item">
+      <a href="" class="nav-list__link">
+        Еще один элемент
+      </a>
+    </li>
+    <li class="nav-list__item">
+      <a href="" class="nav-list__link">
+        Еще один элемент
+      </a>
+    </li>
+  </ul>
+
+  <form action="some.serv.com" method="post" class="form">
+    <span class="form__title">Регистрация</span>
+<!--Инпуты заключены в лейблы т.к. нет сложной сетки или-->
+    <label for="" class="form__label form__label--email">
+      E-mail
+      <input type="email" class="form__input form__input--email" placeholder="example@site.domain">
+    </label>
+
+    <label for="" class="form__label form__label--password">
+      Пароль
+      <input type="password" class="form__input" placeholder="password">
+    </label>
+
+    <label for="" class="form__label form__label--password">
+      Повторите пароль
+      <input type="password" class="form__input" placeholder="password">
+    </label>
+
+    <label for="" class="form__label form__label--name">
+      ФИО
+      <input type="text" class="form__input form__input--name" placeholder="Игорев Игорь Игоревич">
+    </label>
+
+    <label for="" class="form__label">
+      Возраст
+      <input type="number" class="form__input form__input--age" placeholder="18">
+    </label>
+
+    <div class="form_control">
+      <button class="form_button form_button--submit">Отправить</button>
+      <button class="form_button form_button--cancel">Отмена</button>
+    </div>
+  </form>
+</body>
+</html>

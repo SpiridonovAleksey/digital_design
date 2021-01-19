@@ -1,0 +1,40 @@
+
+.nav-list {
+  width: 360px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #cccccc;
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.nav-list__item:first-of-type .nav-list__link {
+  border-radius: 10px 10px 0 0;
+}
+
+.nav-list__item:last-of-type .nav-list__link {
+  border-radius: 0 0 10px 10px;
+}
+
+.nav-list__link {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+
+  &:hover {
+    background-color: #9c9c9c;
+  }
+
+  &:active {
+    background-color: #7c7c7c;
+    color: #cccccc;
+  }
+}
+
+
