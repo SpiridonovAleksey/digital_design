@@ -42,6 +42,7 @@
 
   <form action="some.serv.com" method="post" class="form">
     <span class="form__title">Регистрация</span>
+<!--Инпуты заключены в лейблы т.к. нет сложной сетки-->
     <label for="email" class="form__label form__label--email">
       E-mail
       <input type="email" id="email" name="email" class="form__input form__input--email" placeholder="example@site.domain" required="">
@@ -51,7 +52,7 @@
       Пароль
       <input type="password" id="password" name="password" class="form__input form__input--password" placeholder="password" minlength="6" maxlength="20" required="">
     </label>
-<!--Валидацию соответствия двух паролей реализовал с помощью js -->
+
     <label for="repeat-password" class="form__label form__label--repeat-password">
       Повторите пароль
       <input type="password" id="repeat-password" name="repeat-password" class="form__input form__input--repeat-password" placeholder="password" minlength="6" maxlength="20" required="">
