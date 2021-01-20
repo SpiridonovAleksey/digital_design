@@ -22,6 +22,7 @@ $form_padding: 20px;
   font-size: 32px;
   line-height: 37px;
   padding-bottom: 20px;
+  margin: 10px 0;
 
   &::after {
       content: '';
@@ -37,12 +38,27 @@ $form_padding: 20px;
 .form__label {
   display: block;
   box-sizing: border-box;
+  margin: 10px 0;
+
+
+  &:hover {
+    cursor: pointer;
+    color: #cccccc;
+  }
+
+  &:hover .form__input {
+    background-color: #cccccc;
+  }
+
+  &:hover .form__input::placeholder {
+    color: #fff;
+  }
 }
 
 .form__input {
   display: block;
   box-sizing: border-box;
-  margin: 0;
+  margin: 5px 0 0 0;
   padding: 6px 12px;
   width: 175px;
   border: 1px solid #9c9c9c;
@@ -80,6 +96,8 @@ border: none;
   box-sizing: border-box;
   width: 100%;
   position: relative;
+  padding-top: 20px;
+  margin: 10px 0;
 
   &::before {
     content: '';
@@ -90,7 +108,6 @@ border: none;
     width: calc(100% + #{$form_padding} * 2);
     background-color: #fff;
   }
-
 }
 
 .form_button {
@@ -103,6 +120,11 @@ border: none;
   border-radius: 3px;
   padding: 8px 12px;
   color: #cccccc;
+
+  &:hover {
+    background-color: #cccccc;
+    color: #616161;
+  }
 }
 
 .form_button--cancel {

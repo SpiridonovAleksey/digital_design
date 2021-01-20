@@ -42,30 +42,30 @@
 
   <form action="some.serv.com" method="post" class="form">
     <span class="form__title">Регистрация</span>
-<!--Инпуты заключены в лейблы т.к. нет сложной сетки или-->
-    <label for="" class="form__label form__label--email">
+<!--Инпуты заключены в лейблы т.к. нет сложной сетки-->
+    <label for="email" class="form__label form__label--email">
       E-mail
-      <input type="email" class="form__input form__input--email" placeholder="example@site.domain">
+      <input type="email" id="email" name="email" class="form__input form__input--email" placeholder="example@site.domain" required="">
     </label>
 
-    <label for="" class="form__label form__label--password">
+    <label for="password" class="form__label form__label--password">
       Пароль
-      <input type="password" class="form__input" placeholder="password">
+      <input type="password" id="password" name="password" class="form__input" placeholder="password" minlength="6" maxlength="20" required="">
     </label>
 
-    <label for="" class="form__label form__label--password">
+    <label for="repeat-password" class="form__label form__label--password">
       Повторите пароль
-      <input type="password" class="form__input" placeholder="password">
+      <input type="password" id="repeat-password" name="repeat-password" class="form__input" placeholder="password" minlength="6" maxlength="20" required="">
     </label>
 
-    <label for="" class="form__label form__label--name">
+    <label for="name" class="form__label form__label--name">
       ФИО
-      <input type="text" class="form__input form__input--name" placeholder="Игорев Игорь Игоревич">
+      <input type="text" id="name" name="name" class="form__input form__input--name" placeholder="Игорев Игорь Игоревич" minlength="3" required="">
     </label>
 
-    <label for="" class="form__label">
+    <label for="age" class="form__label">
       Возраст
-      <input type="number" class="form__input form__input--age" placeholder="18">
+      <input type="number" id="age" name="age" class="form__input form__input--age" placeholder="18" max="150" required="">
     </label>
 
     <div class="form_control">
